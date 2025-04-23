@@ -1,6 +1,7 @@
 {
   "name": "serwer",
   "private": true,
+  "homepage": "groszekdeveloper.com",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
