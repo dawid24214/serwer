@@ -10,7 +10,7 @@ const App = () => {
                 <div className="left-section">
                     <div className="logo"><strong>Dawid</strong>
                         Grochowski<br/> Web<strong>Developer</strong></div>
-                    <h1>Śledź, planuj i osiągaj swoje cele finansowe</h1>
+                    <h1>Dlaczego warto mi zaufać przy projektowaniu strony wizytówki?</h1>
                 </div>
                 <div className="right-section">
                     <img src="Zrzut ekranu 2025-04-23 173119.png" alt="Podgląd aplikacji finansowej" />
