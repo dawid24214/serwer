@@ -2,6 +2,7 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
+import logo from "./assets/1sesia.png";
 
 const App = () => {
     return (
@@ -13,7 +14,7 @@ const App = () => {
                     <h1>Dlaczego warto mi zaufać przy projektowaniu strony wizytówki?</h1>
                 </div>
                 <div className="right-section">
-                    <img src="Zrzut ekranu 2025-04-23 173119.png" alt="Podgląd aplikacji finansowej" />
+                    <img src={logo} alt="Podgląd aplikacji finansowej" />
                 </div>
             </section>
 

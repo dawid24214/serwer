@@ -8,6 +8,7 @@ body {
   gap: 40px;
   padding: 40px;
 }
+
 .wrapper, .section-two, .section-three, .section-four, .section-five {
   display: flex;
   justify-content: space-between;
