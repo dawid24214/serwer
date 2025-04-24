@@ -1,42 +1,111 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: linear-gradient(to right, #1a1a1a, #0f2027);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
 }
-
+.wrapper, .section-two, .section-three, .section-four, .section-five {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  padding: 40px;
+}
+.wrapper {
+  background: radial-gradient(circle at 30% 30%, rgba(255, 179, 71, 0.6), rgba(30, 144, 255, 0.6), #000);
+}
+.left-section {
+  max-width: 50%;
+}
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-bottom: 20px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+h1 {
+  font-size: 2em;
+  background: linear-gradient(to right, #ffb347, #1e90ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.right-section img {
+  border-radius: 20px;
+  max-width: 300px;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section-two {
+  background: radial-gradient(circle at 20% 40%, #ffb347, #000);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.section-three {
+  background: linear-gradient(to bottom right, #000, #1e90ff);
+  gap: 40px;
 }
-
-.card {
-  padding: 2em;
+.section-four {
+  flex-direction: column;
+  background: #000;
+  gap: 20px;
 }
-
-.read-the-docs {
-  color: #888;
+.section-two .text-box, .section-three .features-box {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 50%;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+.section-two h2, .section-three h2, .section-four h2, .section-five h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.section-two p, .section-three p, .testimonial p, .section-five p {
+  font-size: 1em;
+  color: #f0f0f0;
+}
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.feature-item i {
+  font-size: 24px;
+}
+.testimonials {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.testimonial {
+  background-color: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 250px;
+  flex: 1;
+  backdrop-filter: blur(5px);
+}
+.testimonial img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.testimonial strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+.testimonial input[type="file"] {
+  margin-top: 10px;
+  color: #fff;
 }
