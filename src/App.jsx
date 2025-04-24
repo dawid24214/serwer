@@ -8,7 +8,8 @@ const App = () => {
         <div className="app">
             <section className="wrapper">
                 <div className="left-section">
-                    <div className="logo">GroszekDeveloperWeb</div>
+                    <div className="logo"><strong>Dawid</strong>
+                        Grochowski<br/> Web<strong>Developer</strong></div>
                     <h1>Śledź, planuj i osiągaj swoje cele finansowe</h1>
                 </div>
                 <div className="right-section">
