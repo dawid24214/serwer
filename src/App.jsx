@@ -3,6 +3,7 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import logo from "./assets/1sesia.png";
+import roboty from "./assets/.png";
 
 const App = () => {
     return (
@@ -20,11 +21,9 @@ const App = () => {
 
             <section className="section-two">
                 <div className="text-box">
-                    <h2>Czym jest GroszekDeveloperWeb?</h2>
+                    <h2></h2>
                     <p>
-                        Wyróżnij się na tle konkurencji — opisz swoje unikalne cechy,
-                        filozofię działania, otrzymane nagrody lub inne atuty. Potraktuj to jak swoją wizytówkę,
-                        która przyciągnie uwagę odbiorcy.
+                        Projektowanie stron to dziś nie tylko techniczna umiejętność – to sztuka łączenia estetyki, funkcjonalności i strategii marki w jednym miejscu. Jako programista i twórca stron internetowych, wiem, jak ważne jest, by Twoja strona nie tylko wyglądała świetnie, ale też działała szybko, intuicyjnie i skutecznie budowała zaufanie do Twojej marki.
                     </p>
                 </div>
                 <div>
