@@ -3,7 +3,7 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import logo from "./assets/1sesia.png";
-import roboty from "./assets/.png";
+import roboty from "./assets/roboty_komputer.png";
 
 const App = () => {
     return (
@@ -27,8 +27,8 @@ const App = () => {
                     </p>
                 </div>
                 <div>
-                    <img
-                        src="Zrzut ekranu 2025-04-23 174337.png"
+                    <img className='ai'
+                        src= {roboty}
                         alt="Makieta telefonu na laptopie"
                     />
                 </div>
