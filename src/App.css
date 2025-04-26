@@ -35,7 +35,7 @@ body {
 }
  strong{
    font-family: "Century Gothic",sans-serif;
-  color: rgba(17, 17, 17, 0.56);
+  color: rgb(17, 17, 17);
 }
 h1 {
   font-size: 2em;
@@ -50,7 +50,7 @@ h1 {
 }
 .ai{
   border-radius: 20px;
-  max-width: 300px;
+  max-width: 425px;
 }
 .section-two {
   background: radial-gradient(circle at 20% 40%, #ffb347, #000);
@@ -89,6 +89,9 @@ h1 {
   display: flex;
   align-items: flex-start;
   gap: 15px;
+}
+.feature-item,h3{
+  color: #d4943b;
 }
 .feature-item i {
   font-size: 24px;
