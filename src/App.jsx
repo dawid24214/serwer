@@ -5,6 +5,7 @@ import './App.css'
 import logo from "./assets/1sesia.png";
 import roboty from "./assets/roboty_komputer.png";
 import funkcje from "./assets/funkcje.png";
+import Pawel from "./assets/opinia1.png";
 
 const App = () => {
     return (
@@ -82,18 +83,18 @@ const App = () => {
                 <h2>Opinie</h2>
                 <div className="testimonials">
                     {[
-                        { name: "Paweł", img: "avatar1.png" },
-                        { name: "Mason", img: "avatar2.png" },
-                        { name: "Jonah", img: "avatar3.png" }
-                    ].map(({ name, img }, index) => (
+                        { name: "Paweł"},
+                        { name: "Mason"},
+                        { name: "Jonah"}
+                    ].map(({ name }, index) => (
                         <div className="testimonial" key={index}>
-                            <img src={img} alt={name} />
+
                             <strong>{name}</strong>
                             <p>
                                 Opinie to krótkie cytaty od osób, które kochają Twoją markę.
                                 Świetny sposób na przekonanie innych do Twoich usług.
                             </p>
-                            <input type="file" accept="image/*" />
+
                         </div>
                     ))}
                 </div>
