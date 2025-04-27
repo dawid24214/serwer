@@ -1,5 +1,5 @@
 
-import './App.css'
+import './App.scss'
 import logo from "./assets/1sesia.png";
 import roboty from "./assets/roboty_komputer.png";
 import funkcje from "./assets/funkcje.png";
