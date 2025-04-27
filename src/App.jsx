@@ -8,7 +8,8 @@ import  defaultavatar from './assets/profilowy.png';
 import opinia1 from './assets/opinia1.png'
 import opinia2 from './assets/opinia2.png'
 import opinia3 from './assets/opinia3.png'
-
+import twórca from './assets/twórca.png'
+import { FaFacebook, FaInstagram ,FaEnvelope, FaPhone} from "react-icons/fa";
 
 const App = () => {
     const [selectedPhoto, setSelectedPhoto] = useState(null);
@@ -211,15 +212,20 @@ const App = () => {
 
             <section className="section-five">
                 <div style={{maxWidth: "50%"}}>
-                    <h2>Poznaj twórców</h2>
+                    <h2>🤝 Poznaj twórce</h2>
                     <p>
-                        Poznaj historię firmy, jej misję, wizję i filozofię działania. Przedstaw tożsamość marki swoim
-                        partnerom i klientom, pokazując ludzi stojących za projektem.
+                        Za każdą dobrze zaprojektowaną stroną stoi ktoś, kto nie tylko zna technologię, ale też rozumie ludzi.
+                        Nazywam się Dawid Grochowski i tworzę strony internetowe, które są proste w obsłudze, nowoczesne i skrojone na miarę Twoich potrzeb.
+
+                        Moja praca łączy techniczną precyzję z kreatywnym podejściem. Projektuję witryny, które nie tylko wyglądają świetnie, ale także działają szybko, płynnie integrują się z innymi narzędziami i zapewniają bezpieczeństwo Twoim użytkownikom.
+
+                        Każdy projekt to dla mnie osobna historia – dlatego podchodzę do tworzenia stron z pasją, zaangażowaniem i szacunkiem dla Twojej wizji.
+                        Wierzę, że dobra współpraca zaczyna się od rozmowy – poznajmy się i stwórzmy razem coś wyjątkowego!
                     </p>
                 </div>
                 <div>
                     <img
-                        src="Zrzut ekranu 2025-04-23 174945.png"
+                        src={twórca}
                         alt="Zespół przedstawiony na ekranie laptopa"
                         style={{borderRadius: "20px", maxWidth: "300px"}}
                     />
@@ -235,31 +241,53 @@ const App = () => {
                 padding: "40px",
                 color: "white"
             }}>
-                <div style={{flex: 1}}>
-                    <h2>Kontakt</h2>
-                </div>
-                <div style={{flex: 1}}>
-                    <p>
-                        <strong>Telefon</strong>
-                        <br/>
-                        (123) 456 7890
-                    </p>
-                    <p>
-                        <strong>Email</strong>
-                        <br/>
-                        <a href="mailto:hello@reallygreatsite.com" style={{color: "#fff", textDecoration: "underline"}}>
-                            hello@reallygreatsite.com
-                        </a>
-                    </p>
-                    <p>
+                <div className="social-contact">
+                    <div className="social">
                         <strong>Social</strong>
                         <br/>
-                        <a href="#" style={{color: "white", marginRight: "10px", fontSize: "1.5em"}}>📘</a>
-                        <a href="#" style={{color: "white", fontSize: "1.5em"}}>📸</a>
-                    </p>
+                        <a
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="social-link"
+                        >
+                            <FaFacebook/>
+                        </a>
+                        <a
+                            href="https://www.instagram.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="social-link"
+                        >
+                            <FaInstagram/>
+                        </a>
+                    </div>
+
+                    <div className="contact">
+                        <strong>Kontakt</strong>
+                        <br/>
+                        <p>
+                            <FaEnvelope className="contact-icon"/>
+                            <a
+                                href="dgrochowsk@gmail.com"
+                                className="contact-link"
+                            >
+                                dgrochowsk@gmail.com
+                            </a>
+                        </p>
+                        <p>
+                            <FaPhone className="contact-icon"/>
+                            <a
+                                href="tel:+48516459508"
+                                className="contact-link"
+                            >
+                                +48 516 459 508
+                            </a>
+                        </p>
+                    </div>
                 </div>
             </section>
         </div>
-    );
+);
 };
 export default App
