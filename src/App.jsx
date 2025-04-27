@@ -5,22 +5,32 @@ import roboty from "./assets/roboty_komputer.png";
 import funkcje from "./assets/funkcje.png";
 import {useState} from "react";
 import  defaultavatar from './assets/profilowy.png';
+import opinia1 from './assets/opinia1.png'
+import opinia2 from './assets/opinia2.png'
+import opinia3 from './assets/opinia3.png'
 
 
 const App = () => {
+    const [selectedPhoto, setSelectedPhoto] = useState(null);
 
     const [opinie, setOpinie] = useState([
         {
-            name: "Isla",
+            name: "Paweł",
             avatar: defaultavatar,
             text: "Świetna obsługa i profesjonalne podejście!",
-            photos:[]
+            photos:[opinia1]
         },
         {
-            name: "Mason",
+            name: "Ukasz",
             avatar: defaultavatar,
             text: "Polecam z całego serca!",
-            photos:[]
+            photos:[opinia2]
+        },
+        {
+            name: "K.W",
+            avatar: defaultavatar,
+            text: "Polecam z całego serca!",
+            photos:[opinia3]
         }
     ]);
 
@@ -42,6 +52,10 @@ const App = () => {
         );
         setNewReview({ ...newReview, photos: files });
     };
+
+
+
+
 
 
 
@@ -129,6 +143,13 @@ const App = () => {
             </section>
 
             <section className="section-four">
+
+                {selectedPhoto && (
+                    <div className="photo-modal" onClick={() => setSelectedPhoto(null)}>
+                        <img src={selectedPhoto} alt="Powiększone zdjęcie" className="modal-photo" />
+                    </div>
+                )}
+
                 <h2>Opinie</h2>
 
                 <div className="testimonials">
@@ -139,12 +160,13 @@ const App = () => {
                             <p>{text}</p>
                             <div className="client-photos">
                                 {photos.map((photo, idx) => (
-                                    <img
-                                        key={idx}
-                                        src={photo}
-                                        alt={`Zdjęcie klienta ${idx + 1}`}
-                                        className="client-photo"
-                                    />
+                                    <a href={photo} target="_blank" rel="noopener noreferrer" key={idx}>
+                                        <img
+                                            src={photo}
+                                            alt={`Zdjęcie klienta ${idx + 1}`}
+                                            className="client-photo"
+                                        />
+                                    </a>
                                 ))}
                             </div>
                         </div>

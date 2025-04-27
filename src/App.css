@@ -128,3 +128,126 @@ h1 {
   margin-top: 10px;
   color: #fff;
 }
+
+
+
+
+
+.section-four {
+  margin-top: 60px;
+  padding: 40px;
+  border-radius: 20px;
+  background: radial-gradient(circle at center, #1a1a1a, #0f2027);
+}
+
+.section-four h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testimonial {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.testimonial strong{
+  color: #ffffff;
+}
+
+.testimonial strong {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.testimonial p {
+  font-size: 1rem;
+  color: #f0f0f0;
+  margin-bottom: 15px;
+}
+
+.client-photos {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.client-photo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Formularz dodawania opinii */
+.add-review {
+  margin-top: 50px;
+}
+
+.add-review h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.add-review form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.add-review input[type="text"],
+.add-review textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  resize: none;
+}
+
+.add-review input[type="file"] {
+  color: white;
+}
+
+.add-review button {
+  padding: 12px;
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-review button:hover {
+  background-color: #1c7ed6;
+}
